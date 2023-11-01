@@ -32,12 +32,12 @@ class TestTrip:
 
         # does not mutate start_date if value is not a string
         # comment out the next two lines if using Exceptions
-        trip.start_date = 2
-        assert trip.start_date == "May 6th"
+        # trip.start_date = 2
+        # assert trip.start_date == "May 6th"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     Trip(matteo, yosemite, 2, "May 9th")
+        with pytest.raises(Exception):
+            Trip(matteo, yosemite, 2, "May 9th")
 
     def test_start_date_has_valid_length(self):
         """trip has valid start_date"""
@@ -46,12 +46,12 @@ class TestTrip:
         trip = Trip(matteo, yosemite, "May 5th", "May 9th")
 
         # comment out the next two lines if using Exceptions
-        trip.start_date = "May6th"
-        assert trip.start_date == "May 5th"
+       # trip.start_date = "May6th"
+       # assert trip.start_date == "May 5th"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     Trip(matteo, yosemite, "May5th", "May 9th")
+        with pytest.raises(Exception):
+            Trip(matteo, yosemite, "May5th", "May 9th")
 
     def test_has_end_date(self):
         """Trip is initialized with an end_date"""
@@ -75,12 +75,12 @@ class TestTrip:
 
         # does not mutate end_date if value is not a string
         # comment out the next two lines if using Exceptions
-        trip.end_date = 2
-        assert trip.end_date == "May 10th"
+       # trip.end_date = 2
+       # assert trip.end_date == "May 10th"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     Trip(matteo, yosemite, "May 5th", 2)
+        with pytest.raises(Exception):
+            Trip(matteo, yosemite, "May 5th", 2)
 
     def test_end_date_has_valid_length(self):
         """trip has valid end_date"""
@@ -89,12 +89,12 @@ class TestTrip:
         trip = Trip(matteo, yosemite, "May 5th", "May 9th")
 
         # comment out the next two lines if using Exceptions
-        trip.end_date = "May8th"
-        assert trip.end_date == "May 9th"
+       # trip.end_date = "May8th"
+       # assert trip.end_date == "May 9th"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     Trip(matteo, yosemite, "May 5th", "May8th")
+        with pytest.raises(Exception):
+            Trip(matteo, yosemite, "May 5th", "May8th")
 
     def test_has_visitor(self):
         """trip has a visitor"""

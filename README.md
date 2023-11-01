@@ -137,7 +137,6 @@ build out any helper methods if needed.
   - Returns `None` if the park has no visitors
 
 #### Visitor
-
 - `Visitor total_visits_at_park(park)`
   - Receives a **NationalPark object** as argument
   - Returns the total number of times a visitor visited the park passed in as argument
